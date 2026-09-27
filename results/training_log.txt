@@ -1,0 +1,24 @@
+[23:23:15] VSA Advisor Bot backend training started.
+[23:23:15] The website does not train models; this backend script trains the advisor models for evidence and deployment.
+[23:23:15] Loading 2-year XAUUSD M5 dataset from: data/bars.csv
+[23:23:18] Raw bars loaded: 143,020
+[23:23:18] VSA setup examples created: 431
+[23:23:18] Label definition: VALID_TRADE means price reached the 1R first target before the protective stop. Then 70% is realised at 1R and the remaining 30% either exits at breakeven or reaches 4R. Same-bar ambiguity is scored conservatively as stop first.
+[23:23:18] Wins/valid setups: 144; avoided/failed/expired setups: 287
+[23:23:18] Purged chronological split: train=301, validation=65, test=65
+[23:23:18] Embargo: 180 minutes; purged rows: train=0, validation=0
+[23:23:18] Train period: 2024-08-01 08:45:00 to 2026-03-30 17:15:00
+[23:23:18] Validation period: 2026-03-31 16:05:00 to 2026-06-12 18:20:00
+[23:23:18] Test period: 2026-06-16 03:55:00 to 2026-08-17 03:10:00
+[23:23:18] Training LR bot: Logistic Regression + VSA strategy outcomes...
+[23:23:18] Saved LR bot to models/lr_vsa_bot.joblib
+[23:23:18] Training RF bot: Random Forest + VSA strategy outcomes...
+[23:23:18] Saved RF bot to models/rf_vsa_bot.joblib
+[23:23:18] LR and RF model comparison saved to results/model_comparison.csv
+[23:23:18] LR_VSA_BOT validation F1=0.515, balanced accuracy=0.603, threshold=0.35
+[23:23:18] RF_VSA_BOT validation F1=0.508, balanced accuracy=0.608, threshold=0.46
+[23:23:18] Selected final advisor model: LR_VSA_BOT
+[23:23:18] Selection reason: Selected between the teacher-required LR and RF candidates using the highest validation F1 at a validation-tuned threshold (0.35); the untouched test period and later contextual model-family benchmarks were not used for selection.
+[23:23:18] Latest selected-model signal exported to outputs/ml_signal.csv
+[23:23:18] Latest signal: BUY WATCH_ONLY probability=0.928
+[23:23:18] Training finished in 3.75 seconds.

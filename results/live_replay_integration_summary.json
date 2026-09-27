@@ -1,0 +1,25 @@
+{
+  "evaluation": "Controlled completed-bar replay; no live MT5 signal was modified",
+  "replayed_setup_time": "2026-08-17 03:10:00",
+  "selected_model": "LR_VSA_BOT",
+  "scenario_id": 3,
+  "direction": "BUY",
+  "lr_probability_valid": 0.9283259211442056,
+  "selected_threshold": 0.35,
+  "clear_news_final_decision": "TRADE_CANDIDATE",
+  "blocked_news_raw_ml_decision": "TRADE_CANDIDATE",
+  "blocked_news_final_decision": "WATCH_ONLY",
+  "checks": {
+    "selected_model_is_lr": true,
+    "new_setup_scored": true,
+    "probability_above_selected_threshold": true,
+    "clear_calendar_keeps_ml_candidate": true,
+    "duplicate_setup_suppressed": true,
+    "news_gate_preserves_raw_ml_decision": true,
+    "news_gate_changes_final_decision": true,
+    "news_gate_records_block": true,
+    "local_lr_explanation_created": true,
+    "live_signal_contract_has_29_columns": true
+  },
+  "all_checks_passed": true
+}

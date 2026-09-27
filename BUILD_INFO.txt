@@ -1,0 +1,6 @@
+VSA Advisor Bot Final Submission v9
+Date: 2026-09-25
+
+Includes: v7 gold visual theme plus a corrected embedded Forex Factory/Fair Economy USD high-impact calendar. The News Risk Filter no longer links out to Forex Factory. It verifies the official this-week and next-week exports independently, preferring JSON and falling back to the official XML weekly export if a JSON request fails. It converts times into broker-server time, displays red-folder events directly in Today / This Week / Next Week calendar views, and preserves a last-success display cache if the export is temporarily rate-limited. One successfully loaded week can no longer be misrepresented as verified two-week coverage. Unverified cache/fallback data never clears the trading news gate, and the UI never reports "no red-folder events" for a week whose export was not actually verified. Core VSA/ML/risk/MT5 logic is unchanged.
+
+Automated suite: 37 tests passing.

@@ -1,0 +1,23 @@
+{
+  "cycle_time": "2026-08-18 23:35:16",
+  "bars_path": "/Users/syedabdullahhumayun/Library/Application Support/net.metaquotes.wine.metatrader5/drive_c/users/user/AppData/Roaming/MetaQuotes/Terminal/Common/Files/xauusd_m5_bars.csv",
+  "project_signal_path": "/Users/syedabdullahhumayun/Documents/vsa_advisor_bot_vsa_ml_final/outputs/ml_signal.csv",
+  "bridge_signal_path": "/Users/syedabdullahhumayun/Library/Application Support/net.metaquotes.wine.metatrader5/drive_c/users/user/AppData/Roaming/MetaQuotes/Terminal/Common/Files/ml_signal.csv",
+  "output_written": false,
+  "training_data_role": "Offline labelled VSA examples used to fit LR and RF; not reread for each live decision.",
+  "live_data_role": "Completed MT5 M5 bars used only to construct a new setup feature vector for inference.",
+  "vsa_runtime": "Python modules/vsa_strategy.py::scan_vsa_scenarios",
+  "ml_runtime": "Python saved scikit-learn pipeline::predict_proba",
+  "mt5_runtime": "MQL5 bar exporter + visible VSA indicator + validated signal bridge",
+  "bars_file_exists": true,
+  "model_path": "/Users/syedabdullahhumayun/Documents/vsa_advisor_bot_vsa_ml_final/models/selected_model.joblib",
+  "model_file_exists": true,
+  "ml_inference_executed": false,
+  "vsa_scanner_executed": true,
+  "retraining_executed": false,
+  "selected_model": "LR_VSA_BOT",
+  "bars_read": 2500,
+  "latest_closed_bar": "2026-08-18 21:30:00",
+  "state": "NO_NEW_VSA_SETUP",
+  "message": "NO_NEW_VSA_SETUP: latest formal setup is 2026-08-18 10:35:00; latest closed M5 bar is 2026-08-18 21:30:00."
+}

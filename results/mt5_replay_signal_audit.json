@@ -1,0 +1,14 @@
+{
+  "purpose": "Untouched-test VSA setup replay for the MT5 Strategy Tester",
+  "source": "results/lr_test_predictions.csv",
+  "output": "mt5/vsa_lr_test_signals.csv",
+  "test_start": "2026-06-16 03:55:00",
+  "test_end": "2026-08-17 03:10:00",
+  "formal_vsa_setups": 65,
+  "lr_threshold": 0.35,
+  "lr_accepted_setups": 45,
+  "vsa_only_setups": 65,
+  "signal_rows_match_python_test_predictions": true,
+  "execution_note": "The tester opens at the first tradable tick after a completed signal candle; stops and 1R/4R targets are recalculated from that market entry.",
+  "news_filter_note": "Historical news filtering is intentionally excluded from every MT5 benchmark unless equivalent verified event data is supplied."
+}

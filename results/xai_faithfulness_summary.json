@@ -1,0 +1,11 @@
+{
+  "method": "Intrinsic Logistic Regression contribution reconstruction",
+  "rows_audited": 65,
+  "features_per_explanation": 24,
+  "intercept_included": true,
+  "mean_absolute_probability_error": 2.2204460492503132e-17,
+  "maximum_absolute_probability_error": 1.6653345369377348e-16,
+  "faithful_within_tolerance": true,
+  "tolerance": 1e-12,
+  "interpretation_boundary": "Faithful to the fitted LR calculation; not evidence of causal market effects."
+}

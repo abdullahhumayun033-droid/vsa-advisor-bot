@@ -1,0 +1,4 @@
+event_time,currency,event,impact,forecast,previous,source
+2026-08-17 18:00,USD,High Impact USD Event,High,,,Fallback sample
+2026-08-18 17:30,USD,US Inflation / CPI Related Event,High,,,Fallback sample
+2026-08-19 23:00,USD,FOMC / Fed Communication,High,,,Fallback sample

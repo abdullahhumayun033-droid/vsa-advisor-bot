@@ -1,0 +1,6 @@
+model_family,role,strength,limitation,project_decision
+Logistic Regression,Required candidate and deployed model,Calibrated probability and exact coefficient-based explanations,Linear decision boundary,Retained: best validation F1 among the required LR/RF candidates and strongest transparency fit
+Random Forest,Required candidate,Non-linear interactions and robust tabular baseline,Individual predictions are harder to explain faithfully to novice users,Retained as separately trained comparison; not deployed
+Decision Tree,Additional context benchmark,Human-readable non-linear rules,Unstable and prone to overfitting on 431 setup examples,Benchmarked only; not added to selection search
+Histogram Gradient Boosting,Additional context benchmark,Strong non-linear tabular learner,Lower transparency and greater tuning burden for the small dataset,Benchmarked only; not added to selection search
+Neural Network / Reinforcement Learning,Literature and future-work comparator,Can learn complex sequential policies,"Data-hungry, harder to validate and explain; unnecessary for this bounded prototype",Excluded to avoid unjustified complexity and weak reproducibility
